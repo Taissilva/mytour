@@ -1,0 +1,13 @@
+# coding: utf-8
+
+
+= simple_form_for(@cidade) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :nome
+    = f.input :país
+    = f.input :estado
+
+  .form-actions
+    = f.button :submit, 'Salvar'

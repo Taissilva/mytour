@@ -1,0 +1,25 @@
+# coding: utf-8
+
+%h1 Listing cidades
+
+%table
+  %tr
+    %th Nome
+    %th País
+    %th Estado
+    %th
+    %th
+    %th
+
+  - @cidades.each do |cidade|
+    %tr
+      %td= cidade.nome
+      %td= cidade.país
+      %td= cidade.estado
+      %td= link_to 'Show', cidade
+      %td= link_to 'Edit', edit_cidade_path(cidade)
+      %td= link_to 'Excluir', cidade, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Cidade', new_cidade_path

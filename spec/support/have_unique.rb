@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 RSpec::Matchers.define :have_unique do |field_name|
   match do |model_object|
     factory_name = model_object.class.name.underscore.to_sym

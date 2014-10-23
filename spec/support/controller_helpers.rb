@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ControllerHelpers
   def sign_in(user = FactoryGirl.create(:usuario_admin))
     if user.nil?

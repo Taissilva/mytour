@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require "timeout"
  
 RSpec::Matchers.define :become_true do |field_name|

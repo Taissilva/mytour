@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # permite que testes javascript compartilhem a mesma conexão do resto do código,
 # permitindo fixtures transacionais
 

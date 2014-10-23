@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 def login_admin
   login(create(:usuario_admin))
 end

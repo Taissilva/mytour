@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @cidade.nome
+%p
+  %b País:
+  = @cidade.país
+%p
+  %b Estado:
+  = @cidade.estado
+
+= link_to 'Edit', edit_cidade_path(@cidade)
+\|
+= link_to 'Back', cidades_path

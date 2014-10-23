@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 def resource(filename)
   Rails.root.join('spec', 'resources', filename)
 end
