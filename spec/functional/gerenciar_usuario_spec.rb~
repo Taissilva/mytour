@@ -40,13 +40,13 @@ feature 'gerenciar Usuario' do
       fill_in 'Login',  :with => "login"
       fill_in 'Senha',  :with => "senha"
       fill_in 'Nome',  :with => "nome"
-      select 'Emails', from: 'Email'
+      select 'Email', from: 'Emails'
 
       click_button 'Salvar'
 
       expect(page).to have_content 'Login: login'
       expect(page).to have_content 'Senha: senha'
 	  expect(page).to have_content 'Nome: nome'
-	  expect(page).to have_content 'Email: Emails'
+	  expect(page).to have_content 'Emails: Email'
  end
 end
