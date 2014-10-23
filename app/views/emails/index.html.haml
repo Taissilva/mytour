@@ -1,0 +1,19 @@
+%h1 Listing emails
+
+%table
+  %tr
+    %th Emails
+    %th
+    %th
+    %th
+
+  - @emails.each do |email|
+    %tr
+      %td= email.emails
+      %td= link_to 'Show', email
+      %td= link_to 'Edit', edit_email_path(email)
+      %td= link_to 'Excluir', email, :method => :delete, :data => { :confirm => 'Tem certeza que deseja excluir email?' }
+
+%br
+
+= link_to 'New Email', new_email_path

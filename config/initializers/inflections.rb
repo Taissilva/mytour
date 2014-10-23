@@ -1,3 +1,4 @@
+# coding: UTF-8
 # Be sure to restart your server when you modify this file.
 
 # Add new inflection rules using the following format. Inflections
@@ -28,7 +29,7 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.plural(/^(alem|c|p)ao$/i,  '\1aes')
 
   inflect.singular(/([^ê])s$/i, '\1')
-  inflect.singular(/^(á|gá|paí)s$/i, '\1s')
+
   inflect.singular(/(r|z)es$/i, '\1')
   inflect.singular(/([^p])ais$/i, '\1al')
   inflect.singular(/eis$/i, 'el')
