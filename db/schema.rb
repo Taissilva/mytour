@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141024112350) do
+ActiveRecord::Schema.define(version: 20141024122912) do
+
+  create_table "avaliacoes", force: true do |t|
+    t.string   "positiva"
+    t.string   "negativa"
+    t.integer  "usuario_id"
+    t.integer  "cidade_id"
+    t.integer  "lugar_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "avaliacoes", ["cidade_id"], name: "index_avaliacoes_on_cidade_id"
+  add_index "avaliacoes", ["lugar_id"], name: "index_avaliacoes_on_lugar_id"
+  add_index "avaliacoes", ["usuario_id"], name: "index_avaliacoes_on_usuario_id"
 
   create_table "cidades", force: true do |t|
     t.string   "nome"

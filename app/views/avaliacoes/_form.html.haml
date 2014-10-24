@@ -1,0 +1,12 @@
+= simple_form_for(@avaliacao) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :positiva
+    = f.input :negativa
+    = f.association :usuario, label_method: :login
+    = f.association :cidade, label_method: :nome
+    = f.association :lugar, label_method: :nome
+
+  .form-actions
+    = f.button :submit, 'Salvar'

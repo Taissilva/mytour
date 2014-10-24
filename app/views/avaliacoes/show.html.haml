@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Positiva:
+  = @avaliacao.positiva
+%p
+  %b Negativa:
+  = @avaliacao.negativa
+%p
+  %b Usuario:
+  = @avaliacao.usuario.login
+%p
+  %b Cidade:
+  = @avaliacao.cidade.nome
+%p
+  %b Lugar:
+  = @avaliacao.lugar.nome
+
+= link_to 'Edit', edit_avaliacao_path(@avaliacao)
+\|
+= link_to 'Back', avaliacoes_path

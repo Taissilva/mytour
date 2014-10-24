@@ -10,7 +10,7 @@ feature 'gerenciar Avaliacao' do
 
   let(:usuario) {create(:usuario, login: 'Eus', senha: 'Senha', nome:'Nome')}
   let(:cidade) {create(:cidade, nome: 'Camposs', país: 'País', estado: 'Estado')}
-  let(:lugar) {create(:lugar, nome:'Subways', tipo: 'Tipo')}
+  let(:lugar) {create(:lugar, nome:'Subway', tipo: 'Tipo')}
 
   scenario 'incluir Avaliacao' do # , :js => true  do 
    
