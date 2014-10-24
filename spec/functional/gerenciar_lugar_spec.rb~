@@ -47,7 +47,7 @@ feature 'gerenciar Lugar' do
 
       expect(page).to have_content 'Nome: nome' 
       expect(page).to have_content 'Tipo: tipo' 
-      expect(page).to have_content 'Cidade: Campos'
+      expect(page).to have_content 'Cidade : Campos'
 
    end 
 
